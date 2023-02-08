@@ -13,7 +13,7 @@ const Footer = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex items-center justify-center gap-8 m-8 font-semibold font-secondary">
+      <div className="flex items-center justify-center gap-2 m-8 font-semibold font-secondary">
         <button className="px-6 py-2 transition duration-200 ease-out rounded-full text-primary hover:text-primary/80 active:bg-primary/40">
           PULAR
         </button>
