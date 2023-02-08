@@ -2,13 +2,22 @@ import starEmptyIcon from "../assets/estrela_vazia.svg";
 import starFilledIcon from "../assets/estrela_cheia.svg";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
 import Image from "next/image";
+import { useAtom } from "jotai";
+import { ratingAtom } from "../atoms/ratingAtom";
 
 const StarRating = () => {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useAtom(ratingAtom);
 
-  console.log(rating);
+  const updateRating = async (r: number) => {
+    await fetch("http://localhost:3000/api/updateRating", {
+      method: "POST",
+      body: JSON.stringify({ rating: r }),
+    }).then(() => {
+      setRating(r);
+    });
+  };
+
   return (
     <div className="flex gap-3">
       {[1, 2, 3, 4, 5].map((star, index) => (
@@ -18,7 +27,7 @@ const StarRating = () => {
           transition={{ duration: 1, delay: 0.1 * index }}
           className="w-10 h-10 cursor-pointer"
           key={index}
-          onClick={() => setRating(star)}
+          onClick={() => updateRating(star)}
         >
           <Image
             src={rating >= star ? starFilledIcon : starEmptyIcon}

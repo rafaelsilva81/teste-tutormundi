@@ -6,7 +6,7 @@ import StarRating from "../components/StarRating";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen w-screen items-center justify-center gap-6">
+    <div className="flex flex-col items-center justify-center w-screen h-screen gap-6">
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -16,7 +16,7 @@ function App() {
       </motion.div>
 
       <motion.h1
-        className="text-4xl w-60 text-center"
+        className="text-4xl text-center w-60"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
