@@ -2,14 +2,9 @@
 
 <div>
     <img 
-        src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/desktop.png?raw=true"
-        width="70%"
+        src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/res/desktop.png?raw=true"
+        width="100%"
         alt="Desktop"
-    />
-    <img 
-        src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/mobile.png?raw=true"
-        width="30%"
-        alt="Mobile"
     />
 </div>
 
@@ -38,3 +33,21 @@ O teste se trata de uma tela simples de avaliação de um professor, totalmente 
 2 - Instale as dependências com `yarn install` ou `npm install` ou `pnpm install`
 3 - Rode o projeto com `yarn dev` ou `npm run dev` ou `pnpm run dev`
 4 - Acesse o projeto em `http://localhost:3000`
+
+<div>
+    <img 
+        src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/res/m1.png?raw=true"
+        width="33%"
+        alt="mobile-1"
+    />
+    <img 
+        src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/res/m2.png?raw=true"
+        width="33%"
+        alt="mobile-2"
+    />
+    <img 
+        src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/res/m3.png?raw=true"
+        width="33%"
+        alt="mobile-3"
+    />
+</div>
