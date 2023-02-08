@@ -6,10 +6,12 @@ module.exports = {
       colors: {
         white: "#F2F2F2",
         primary: "#2cc6d0",
+        tertiary: "#C8C8C8",
       },
-    },
-    fontFamily: {
-      sans: ["Londrina Solid", "sans-serif"],
+      fontFamily: {
+        primary: ["Londrina Solid", "sans-serif"],
+        secondary: ["Work Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],
