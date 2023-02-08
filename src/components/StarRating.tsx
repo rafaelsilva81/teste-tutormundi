@@ -8,7 +8,7 @@ import { ratingAtom } from "../atoms/ratingAtom";
 
 const apiUrl =
   process.env.NODE_ENV === "production"
-    ? `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/updateRating`
+    ? `${process.env.VERCEL_URL}/api/updateRating`
     : "http://localhost:3000/api/updateRating";
 
 const StarRating = () => {
