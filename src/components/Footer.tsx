@@ -1,11 +1,18 @@
 import clsx from "clsx";
 import { useAtom } from "jotai/react";
 import { ratingAtom } from "../atoms/ratingAtom";
+import { motion } from "framer-motion";
 
 const Footer = () => {
-  const [rating, _] = useAtom(ratingAtom);
+  const [rating] = useAtom(ratingAtom);
+
   return (
-    <footer className="fixed bottom-0 w-full">
+    <motion.footer
+      className="fixed bottom-0 w-full"
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="flex items-center justify-center m-8 gap-8 font-secondary font-semibold">
         <button
           className="
@@ -26,7 +33,7 @@ const Footer = () => {
           CONFIRMAR
         </button>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

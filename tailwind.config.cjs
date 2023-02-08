@@ -9,9 +9,11 @@ module.exports = {
         tertiary: "#C8C8C8",
       },
       fontFamily: {
-        primary: ["Londrina Solid", "sans-serif"],
         secondary: ["Work Sans", "sans-serif"],
       },
+    },
+    fontFamily: {
+      sans: ["Londrina Solid", "sans-serif"],
     },
   },
   plugins: [],
