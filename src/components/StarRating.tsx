@@ -6,11 +6,16 @@ import Image from "next/image";
 import { useAtom } from "jotai";
 import { ratingAtom } from "../atoms/ratingAtom";
 
+const apiUrl =
+  process.env.NODE_ENV === "production"
+    ? `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/updateRating`
+    : "http://localhost:3000/api/updateRating";
+
 const StarRating = () => {
   const [rating, setRating] = useAtom(ratingAtom);
 
   const updateRating = async (r: number) => {
-    await fetch("http://localhost:3000/api/updateRating", {
+    await fetch(apiUrl, {
       method: "POST",
       body: JSON.stringify({ rating: r }),
     }).then(() => {
