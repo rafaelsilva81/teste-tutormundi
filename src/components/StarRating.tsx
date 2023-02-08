@@ -15,11 +15,10 @@ const StarRating = () => {
   const [rating, setRating] = useAtom(ratingAtom);
 
   const updateRating = async (r: number) => {
+    setRating(r);
     await fetch(apiUrl, {
       method: "POST",
       body: JSON.stringify({ rating: r }),
-    }).then(() => {
-      setRating(r);
     });
   };
 
