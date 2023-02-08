@@ -37,17 +37,17 @@ O teste se trata de uma tela simples de avaliação de um professor, totalmente 
 <div>
     <img 
         src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/res/m1.png?raw=true"
-        width="33%"
+        width="32%"
         alt="mobile-1"
     />
     <img 
         src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/res/m2.png?raw=true"
-        width="33%"
+        width="32%"
         alt="mobile-2"
     />
     <img 
         src="https://github.com/rafaelsilva81/teste-tutormundi/blob/main/public/res/m3.png?raw=true"
-        width="33%"
+        width="32%"
         alt="mobile-3"
     />
 </div>
