@@ -22,7 +22,7 @@ const Footer = () => {
           className={clsx(
             "rounded-full text-white py-2 px-6 transition ease-out duration-200",
             rating === 0
-              ? "bg-tertiary cursor-not-allowed"
+              ? "bg-secondary cursor-not-allowed"
               : "bg-primary hover:bg-primary/80 active:bg-primary/40"
           )}
         >

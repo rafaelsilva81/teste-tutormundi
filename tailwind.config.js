@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         white: "#F2F2F2",
         primary: "#2cc6d0",
-        tertiary: "#C8C8C8",
+        secondary: "#C8C8C8",
       },
       fontFamily: {
         secondary: ["Work Sans", "sans-serif"],
