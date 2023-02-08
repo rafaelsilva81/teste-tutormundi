@@ -1,10 +1,9 @@
 import clsx from "clsx";
-import { useAtom } from "jotai/react";
-import { ratingAtom } from "../atoms/ratingAtom";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Footer = () => {
-  const [rating] = useAtom(ratingAtom);
+  const [rating, setRating] = useState(0);
 
   return (
     <motion.footer
