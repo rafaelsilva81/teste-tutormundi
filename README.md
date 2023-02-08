@@ -29,10 +29,12 @@ O teste se trata de uma tela simples de avaliação de um professor, totalmente 
 
 ## Como rodar o projeto
 
-1 - Clone o repositório
-2 - Instale as dependências com `yarn install` ou `npm install` ou `pnpm install`
-3 - Rode o projeto com `yarn dev` ou `npm run dev` ou `pnpm run dev`
-4 - Acesse o projeto em `http://localhost:3000`
+1. Clone o repositório
+2. Instale as dependências com `npm install`
+3. Rode o projeto com `npm run dev`
+4. Acesse o projeto em `http://localhost:3000`
+
+---
 
 <div>
     <img 
